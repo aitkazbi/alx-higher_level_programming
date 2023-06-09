@@ -7,4 +7,8 @@ if __name__ == "__main__":
     print("{} + {} = {}".format(a, b, add(a, b)))
     print("{} - {} = {}".format(a, b, sub(a, b)))
     print("{} * {} = {}".format(a, b, mul(a, b)))
+<<<<<<< HEAD
     print("{} / {} = {}".format(a, b, div(a, b))) 
+=======
+    print("{} / {} = {}".format(a, b, div(a, b)))
+>>>>>>> 1010a1a2b6158e1d63a89f2b101f08ef1401a263
