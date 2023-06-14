@@ -1,4 +1,5 @@
-n_list = __import__('4-new_in_list').new_in_list
+#!/usr/bin/python3
+new_in_list = __import__('4-new_in_list').new_in_list
 
 my_list = [1, 2, 3, 4, 5]
 idx = 3
