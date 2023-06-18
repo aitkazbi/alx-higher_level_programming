@@ -2,11 +2,11 @@
 
 def print_last_digit(number):
     if number < 0:
-        last-dig = (-1 * number) % 10
+        last_dig = (-1 * number) % 10
 
     else:
-        last-dig = number % 10
+        last_dig = number % 10
 
-    print('{}'.format(last-dig), end='')
+    print('{}'.format(last_dig), end='')
 
-    return last
+    return last_dig
