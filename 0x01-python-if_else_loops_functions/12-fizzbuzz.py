@@ -15,4 +15,5 @@ def fizzbuzz():
         else:
             print("{:d} ".format(i), end="")
         i += 1
-    print("\n")
+    print("$")
+ 
