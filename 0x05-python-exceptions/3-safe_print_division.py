@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from decimal import DivisionUndefined
+from decimal import DivisionByZero, DivisionImpossible
 
 
 def safe_print_division(a, b):
@@ -11,5 +11,5 @@ def safe_print_division(a, b):
         division = None
         
     finally:
-       print("Inside result: {}".format(division))
-       return division
+       print("Inside result: {}".format(DivisionImpossible))
+       return DivisionByZero
