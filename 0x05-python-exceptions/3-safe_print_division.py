@@ -1,15 +1,9 @@
 #!/usr/bin/python3
-
-from decimal import DivisionByZero, DivisionImpossible
-
-
 def safe_print_division(a, b):
     try:
-        division = a / b
-    except (ZeroDivisionError, FloatingPointError):
-        
-        division = None
-        
+        r = a / b
+    except ZeroDivisionError:
+        r = None
     finally:
-       print("Inside result: {}".format(DivisionImpossible))
-       return DivisionByZero
+        print("Inside result:", "{}".format(r))
+        return r
