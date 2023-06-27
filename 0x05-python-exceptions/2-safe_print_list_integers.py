@@ -3,12 +3,11 @@
 def safe_print_list_integers(my_list=[], x=0):
     total = 0
     try:
-        for i in range(x):
-            print(f"{my_list[i]}", end="")
+        for i in range(0, x):
+            print("{:d}".format(my_list[i]), end="")
             total += 1
-    except IndexError:
+    except (ValueError, TypeError):
         pass
     finally:
-      print ("{:d}".format(total))
-      
+      print ()
       return total
