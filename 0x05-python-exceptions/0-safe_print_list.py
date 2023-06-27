@@ -1,11 +1,11 @@
 def safe_print_list(my_list=[], x=0):
-    count = 0
+    total = 0
     try:
         for i in range(x):
-            print(my_list[i], end=' ')
-            count += 1
+            print(f"{my_list[i]}", end="")
+            total += 1
     except IndexError:
-        pass
-    finally:
-        print()  
-        return count
+        break
+
+    print()  
+    return total
