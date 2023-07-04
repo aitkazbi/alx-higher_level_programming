@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+import sys
+
+
 def magic_calculation(a, b):
     result = 0
     for i in range(1, 3):
@@ -11,3 +14,6 @@ def magic_calculation(a, b):
             result = b + a
             break
     return result
+ except Exception as e:
+        print("Exception: {}".format(e), file=sys.stderr)
+    return None
